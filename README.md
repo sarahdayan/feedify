@@ -84,12 +84,12 @@ Everything is set up, now you just need to pull the trigger. To fire Feedify, ju
   $('.feedify').feedify();
 });</pre>
 
-### New Options
+### Options
 
 Feedify comes with a few options to help you adapt it to your design.
 
-offset
-default: 0
+offset<br>
+default: 0<br>
 Additional distance (in pixels) for the previous header to scroll before dropping.
 
 <pre>$('.feedify').feedify({
