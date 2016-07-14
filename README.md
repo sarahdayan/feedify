@@ -84,6 +84,18 @@ Everything is set up, now you just need to pull the trigger. To fire Feedify, ju
   $('.feedify').feedify();
 });</pre>
 
+### New Options
+
+Feedify comes with a few options to help you adapt it to your design.
+
+offset
+default: 0
+Additional distance (in pixels) for the previous header to scroll before dropping.
+
+<pre>$('.feedify').feedify({
+  offset: 100
+});</pre>
+
 ### Optional — Feedify theme
 
 Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.3.4 of Bootstrap if you intend to use it.
@@ -106,4 +118,3 @@ The beautiful icons used in Feedify theme are part of a free collection called <
 ### Images
 
 The portraits I used are all free to share and licensed under Creative Commons, please visit <a href="http://demos.sarahdayan.com/feedify/#credits" target="_blank">Feedify website</a> for a complete list of their authors. All the other images were taken from <a href="http://unsplash.com/" target="_blank">Unsplash</a>.
-
