@@ -32,7 +32,7 @@ Whatever your coding style is, Feedify respects it. Just add the right classes o
 
 Feedify works with JQuery, so you'll need to add JQuery then Feedify for it to work properly. Be careful if you use multiple JavaScript libraries: Feedify is made to avoid conflicts, but you never know what might happen.
 
-<pre>&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;
+<pre>&lt;script src=&quot;js/jquery-1.11.3.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;js/feedify.min.js&quot;&gt;&lt;/script&gt;</pre>
 
 ### Build your feed
