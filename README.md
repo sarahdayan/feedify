@@ -4,7 +4,7 @@ While scrolling your feed, the header remains stuck to top, then is pushed away 
 
 It comes with a beautiful yet optional theme which is everything you need to build a good-looking, functional feed of whatever you want.
 
-Please visit: <a href="http://demos.sarahdayan.com/feedify" target="_blank">http://demos.sarahdayan.com/feedify</a>
+Please visit: <a href="https://sarahdayan.github.io/feedify/" target="_blank">https://sarahdayan.github.io/feedify/</a>
 
 ## Features
 
