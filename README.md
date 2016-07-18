@@ -109,7 +109,7 @@ Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap<
 
 ### Feedify
 
-My name is Sarah Dayan and I'm the one behind Feedify. This project was a way to combine my two passions (<a href="http://resume.sarahdayan.com/" target="_blank">coding</a> and <a href="http://www.sarahdayan.com/" target="_blank">lettering</a>).
+My name is Sarah Dayan and I'm the one behind Feedify. The website uses <a href="http://www.getoutline.com" target="_blank">Outline</a>, my lightweight micro-framework.
 
 ### Icons
 
@@ -117,4 +117,4 @@ The beautiful icons used in Feedify theme are part of a free collection called <
 
 ### Images
 
-The portraits I used are all free to share and licensed under Creative Commons, please visit <a href="http://demos.sarahdayan.com/feedify/#credits" target="_blank">Feedify website</a> for a complete list of their authors. All the other images were taken from <a href="http://unsplash.com/" target="_blank">Unsplash</a>.
+The portraits I used are all free to share and licensed under Creative Commons, they were all found on <a target="_blank" href="https://www.flickr.com/">Flickr</a>. All the other images were taken from <a target="_blank" href="http://unsplash.com/">Unsplash</a>.
