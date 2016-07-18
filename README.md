@@ -98,7 +98,7 @@ Additional distance (in pixels) for the previous header to scroll before droppin
 
 ### Optional — Feedify theme
 
-Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.3.4 of Bootstrap if you intend to use it.
+Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.x of Bootstrap if you intend to use it.
 
 <pre>&lt;link href=&quot;http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link href=&quot;css/feedify.min.css&quot; rel=&quot;stylesheet&quot;&gt;
