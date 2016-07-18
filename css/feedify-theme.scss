@@ -1,4 +1,4 @@
-/* Feedify v1.2.0 by Sarah Dayan | http://demos.sarahdayan.com/feedify */
+/* Feedify v1.2.1 by Sarah Dayan | http://demos.sarahdayan.com/feedify */
 $grey: #eee;
 
 * {
@@ -81,11 +81,11 @@ body {
 
 @font-face {
 	font-family: 'Thinlines';
-	src: url('../font/thinlines.eot?37870409');
-	src: url('../font/thinlines.eot?37870409#iefix') format('embedded-opentype'),
-		url('../font/thinlines.woff?37870409') format('woff'),
-		url('../font/thinlines.ttf?37870409') format('truetype'),
-		url('../font/thinlines.svg?37870409#thinlines') format('svg');
+	src: url('../fonts/thinlines/thinlines.eot');
+	src: url('../fonts/thinlines/thinlines.eot#iefix') format('embedded-opentype'),
+		url('../fonts/thinlines/thinlines.woff') format('woff'),
+		url('../fonts/thinlines/thinlines.ttf') format('truetype'),
+		url('../fonts/thinlines/thinlines.svg#thinlines') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
