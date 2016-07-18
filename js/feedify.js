@@ -1,4 +1,4 @@
-/* Feedify v1.2.0 by Sarah Dayan | http://demos.sarahdayan.com/feedify */
+/* Feedify v1.2.2 by Sarah Dayan | http://demos.sarahdayan.com/feedify */
 (function ($) {
 
 	$.fn.feedify = function(options) {
