@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Feedify.js | The beautiful jQuery feed</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i%7CInconsolata">
+		<link type="text/css" rel="stylesheet" href="css/outline.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="top" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col col-12">
+						<h1>Feedify</h1>
+						<h2>The beautiful jQuery feed</h2>
+						<p>Feedify is a JQuery plugin inspired by Instagram's "stick to top then drop" effect.<br class="hidden-m">
+						While scrolling your feed, the header remains stuck to top, then is pushed away by the new item.</p>
+						<p>It comes with a beautiful yet optional theme which is everything you need<br class="hidden-m"> to build a good-looking, functional feed of whatever you want.</p>
+						<a href="https://github.com/sarahdayan/feedify/archive/master.zip" class="btn">Download</a><br>
+						<a href="demo.html" target="_blank">Demo</a> | <a href="https://github.com/sarahdayan/feedify" target="_blank">Github</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="features" class="section">
+			<div class="container">
+				<h3 class="hidden">Features</h3>
+				<div class="row">
+					<div class="col col-4">
+						<i class="icon-expand"></i>
+						<h4>Fully responsive</h4>
+						<p>The web is responsive now, there's no turning back. Feedify goes with the flow.</p>
+					</div>
+					<div class="col col-4">
+						<i class="icon-select"></i>
+						<h4>Cross-browser</h4>
+						<p>Feedify works on all the most recent browsers, and degrades gracefully down to IE9.</p>
+					</div>
+					<div class="col col-4">
+						<i class="icon-picture"></i>
+						<h4>Feedify theme</h4>
+						<p>You don't need to be a front-end genius to make pretty things. Feedify comes with an optional theme.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-4">
+						<i class="icon-markup"></i>
+						<h4>Flexible</h4>
+						<p>Whatever your coding style is, Feedify respects it. Just add the right classes on your markup to make it work.</p>
+					</div>
+					<div class="col col-4">
+						<i class="icon-leaf"></i>
+						<h4>Lightweight</h4>
+						<p>Feedify.js is less than 1 KB. Because there's no reason why awesome should always be bulky.</p>
+					</div>
+					<div class="col col-4">
+						<i class="icon-coffee"></i>
+						<h4>Easy to use</h4>
+						<p>Setting up Feedify only takes a few minutes.<br> Five if you're really slow.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="usage" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col col-12">
+						<h3>Include JQuery and Feedify</h3>
+						<p>Feedify works with JQuery, so you'll need to add JQuery then Feedify for it to work properly. Be careful if you use multiple JavaScript libraries: Feedify is made to avoid conflicts, but you never know what might happen.</p>
+<pre>
+&lt;script src=<span class="value">&quot;http://code.jquery.com/jquery-latest.min.js&quot;</span>&gt;&lt;/script&gt;
+&lt;script src=<span class="value">&quot;js/feedify.min.js&quot;</span>&gt;&lt;/script&gt;</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<h3>Build your feed</h3>
+						<p>As front-end developers, we like to remain totally free with our code. Some of us will rather keep things awfully simple, while others need extra markup. Some are totally sold with HTML5, while others are hardcorde <code>div</code> users.</p> 
+						<p>Whatever your style is, Feedify got you covered by using classes on key elements. Just make sure they're all here and you'll be good to go.</p>
+						<p><em><strong>Note:</strong> Feedify is based on scrolling, so make sure you create enough items so there's something to scroll.</em></p>
+<pre>
+&lt;div class=<span class="value">&quot;feedify&quot;</span>&gt;
+  &lt;div class=<span class="value">&quot;feedify-item&quot;</span>&gt;
+	&lt;div class=<span class="value">&quot;feedify-item-header&quot;</span>&gt;
+	  This is the header of my item.
+	  It will remain stuck to top while scrolling.
+	&lt;/div&gt;
+	&lt;div class=<span class="value">&quot;feedify-item-body&quot;</span>&gt;
+	  This is the body of my item.
+	  I can put whatever I want in here.
+	&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<h3>Add some style</h3>
+						<p>You're free to use the Feedify theme or not, but it still needs a few lines of CSS to work properly. Either include <code>feedify.min.css</code> in your page, or copy-paste the code in your own CSS stylesheet.</p>
+<pre>
+.feedify .feedify-item {
+  position: <span class="value">relative</span>;
+}
+.feedify .feedify-item .feedify-item-header {
+  z-index: <span class="value">100</span>;
+}
+.feedify .feedify-item.fixed .feedify-item-header {
+  position: <span class="value">fixed</span>;
+  top: <span class="value">0</span>;
+}
+.feedify .feedify-item.bottom .feedify-item-header {
+  position: <span class="value">absolute</span>;
+  bottom: <span class="value">0</span>;
+}</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<h3>Unleash the beast</h3>
+						<p>Everything is set up, now you just need to pull the trigger. To fire Feedify, just add the following piece of code within a <code>&lt;script&gt;</code> tag in your page (or directly in your script page if you have one) and <em>voilà</em>!</p>
+<pre>
+$(function() {
+  $(<span class="value">'.feedify'</span>).feedify();
+});</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<h3><span class="badge">New</span> Options</h3>
+						<p>Feedify comes with a few options to help you adapt it to your design.</p>
+						<div id="options">
+							<div class="row">
+								<div class="col col-2">
+									<strong>offset</strong>
+								</div>
+								<div class="col col-3">
+									default: <code>0</code>
+								</div>
+								<div class="col col-7">
+									Additional distance (in pixels) for the previous header to scroll before dropping.
+								</div>
+							</div>
+						</div>
+<pre>
+$(<span class="value">'.feedify'</span>).feedify({
+  offset: <span class="value">100</span>
+});</pre>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<h3><em>Optional</em> — Feedify theme</h3>
+						<p>Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.3.4 of Bootstrap if you intend to use it.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="changelog" class="section">
+			<div class="container">
+				<h3>Changelog</h3>
+				<div class="row">
+					<div class="col col-2">
+						<time datetime="2016-07-14 23:30">07.14.2016</time>
+					</div>
+					<div class="col col-2">
+						<strong>1.2.0</strong>
+					</div>
+					<div class="col col-8">
+						Refactor Javascript, include Sass files and add offset option.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-2">
+						<time datetime="2015-11-27 15:00">11.27.2015</time>
+					</div>
+					<div class="col col-2">
+						<strong>1.0.1</strong>
+					</div>
+					<div class="col col-8">
+						Correction of a minor bug causing sticky headers to disappear on scroll on iOS.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-2">
+						<time datetime="2015-06-27 15:00">06.27.2015</time>
+					</div>
+					<div class="col col-2">
+						<strong>1.0.0</strong>
+					</div>
+					<div class="col col-8">
+						Publication of Feedify on <a target="_blank" href="https://github.com/sarahdayan/feedify">Github</a>.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-2">
+						<time datetime="2015-06-05 15:00">06.05.2015</time>
+					</div>
+					<div class="col col-2">
+						<strong>1.0.0</strong>
+					</div>
+					<div class="col col-8">
+						Launch of closed beta.
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col col-4">
+						<h3>Credits</h3>
+						<p>My name is Sarah Dayan and I'm the one behind Feedify. The website uses <a href="http://www.getoutline.com" target="_blank">Outline</a>, my lightweight micro-framework.</p>
+					</div>
+					<div class="col col-4">
+						<h3>Icons</h3>
+						<p>The beautiful icons used in Feedify theme are part of a free collection called <a target="_blank" href="http://www.kyleadams.me/thinlines/">Thinlines</a>. They were created by my friend and awesome icon designer <a target="_blank" href="http://kyleadams.me/">Kyle Adams</a>.</p>
+					</div>
+					<div class="col col-4">
+						<h3>Images</h3>
+						<p>The portraits I used are all free to share and licensed under Creative Commons, they were all found on <a target="_blank" href="https://www.flickr.com/">Flickr</a>. All the other images were taken from <a target="_blank" href="http://unsplash.com/">Unsplash</a>.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-80837646-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
