@@ -66,6 +66,7 @@ You're free to use the Feedify theme or not, but it still needs a few lines of C
 }
 .feedify .feedify-item .feedify-item-header {
   z-index: 100;
+  transform: translate3d(0, 0, 0);
 }
 .feedify .feedify-item.fixed .feedify-item-header {
   position: fixed;
