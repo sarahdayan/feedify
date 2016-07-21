@@ -4,11 +4,69 @@
 }
 
 body {
+  margin: 0;
   background: #eee;
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
+}
+
+a, a:focus, a:visited {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover, a:focus:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+.list-unstyled,
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-inline {
+  margin-left: -5px;
+}
+.list-inline li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
 }
 
 .feedify {
@@ -74,10 +132,16 @@ body {
 }
 .feedify .feedify-item footer .actions {
   margin-bottom: 20px;
+  padding-bottom: 20px;
   font-size: 30px;
   border-bottom: 1px solid #eee;
 }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+}
 @font-face {
   font-family: 'Thinlines';
   src: url("../fonts/thinlines/thinlines.eot");

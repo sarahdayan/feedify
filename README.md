@@ -99,12 +99,19 @@ Additional distance (in pixels) for the previous header to scroll before droppin
 
 ### Optional — Feedify theme
 
-Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.x of Bootstrap if you intend to use it.
+Feedify theme comes in two version: one is based on <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, the other uses <a href="http://www.getoutline.com" target="_blank">Outline</a>, my lightweight boilerplate.
+
+If your app already uses Bootstrap, or if you want to integrate Feedify in an existing structure that needs a complete and robust framework solution, I recommend that you go with <a href="demo.html">Feedify for Bootstrap theme</a>. Simply make sure that you include at least version 3.x.
 
 <pre>&lt;link href=&quot;css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link href=&quot;css/feedify.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link href=&quot;css/feedify-theme.min.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
 
+On the other hand, if you're concerned about file size, performance, or if you'll be using Feedify as a standalone component, I strongly suggest you give Outline a try. The whole <a href="demo-outline.html">Feedify for Outline</a> theme weights less than 7 KB (JQuery not included), that's about **20x lighter** than Feedify for Bootstrap.
+
+<pre>&lt;link href=&quot;css/outline.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/feedify.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;css/feedify-theme-outline.min.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
 
 ## Credits
 

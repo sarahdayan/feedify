@@ -1,2 +1,2 @@
-/* Feedify v1.1.2 by Sarah Dayan | https://sarahdayan.github.io/feedify */
-.feedify .feedify-item{position:relative}.feedify .feedify-item .feedify-item-header{z-index:100;transform:translate3d(0, 0, 0)}.feedify .feedify-item.fixed .feedify-item-header{position:fixed;top:0}.feedify .feedify-item.bottom .feedify-item-header{position:absolute;bottom:0}
+/* Feedify v1.2.0 by Sarah Dayan | https://sarahdayan.github.io/feedify */
+.feedify .feedify-item{position:relative}.feedify .feedify-item .feedify-item-header{z-index:100;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}.feedify .feedify-item.fixed .feedify-item-header{position:fixed;top:0}.feedify .feedify-item.bottom .feedify-item-header{position:absolute;bottom:0}
