@@ -4,7 +4,8 @@
 }
 .feedify .feedify-item .feedify-item-header {
   z-index: 100;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .feedify .feedify-item.fixed .feedify-item-header {
   position: fixed;
