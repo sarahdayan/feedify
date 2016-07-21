@@ -1,4 +1,4 @@
-<!-- Feedify v1.1.2 by Sarah Dayan | https://sarahdayan.github.io/feedify -->
+<!-- Feedify v1.2.0 by Sarah Dayan | https://sarahdayan.github.io/feedify -->
 <!doctype html>
 <html lang="fr">
 	<head>
@@ -156,10 +156,16 @@ $(<span class="value">'.feedify'</span>).feedify({
 				<div class="row">
 					<div class="col col-12">
 						<h3><em>Optional</em> — Feedify theme</h3>
-						<p>Feedify theme uses <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. You need to make sure you include at least version 3.x of Bootstrap if you intend to use it.</p>
-<pre>&lt;link href=<span class="value">"css/bootstrap.min.css"</span> rel=<span class="value">"stylesheet"</span>&gt;
-&lt;link href=<span class="value">"css/feedify.min.css"</span> rel=<span class="value">"stylesheet"</span>&gt;
-&lt;link href=<span class="value">"css/feedify-theme.min.css"</span> rel=<span class="value">"stylesheet"</span>&gt;</pre>
+						<p>Feedify theme comes in two version: one is based on <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, the other uses <a href="http://www.getoutline.com" target="_blank">Outline</a>, my lightweight boilerplate.</p>
+						<p>If your app already uses Bootstrap, or if you want to integrate Feedify in an existing structure that needs a complete and robust framework solution, I recommend that you go with <a href="demo.html">Feedify for Bootstrap theme</a>. Simply make sure that you include at least version 3.x.</p>
+<pre>&lt;link href=<span class="value">&quot;css/bootstrap.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;
+&lt;link href=<span class="value">&quot;css/feedify.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;
+&lt;link href=<span class="value">&quot;css/feedify-theme.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;</pre>
+						<p>On the other hand, if you're concerned about file size, performance, or if you'll be using Feedify as a standalone component, I strongly suggest you give Outline a try.</p>
+						<p>The whole <a href="demo-outline.html">Feedify for Outline</a> theme weights less than 7 KB (JQuery not included), that's about <strong>20x lighter</strong> than Feedify for Bootstrap.</p>
+<pre>&lt;link href=<span class="value">&quot;css/outline.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;
+&lt;link href=<span class="value">&quot;css/feedify.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;
+&lt;link href=<span class="value">&quot;css/feedify-theme-outline.min.css&quot;</span> rel=<span class="value">&quot;stylesheet&quot;</span>&gt;</pre>
 					</div>
 				</div>
 			</div>
@@ -167,6 +173,17 @@ $(<span class="value">'.feedify'</span>).feedify({
 		<section id="changelog" class="section">
 			<div class="container">
 				<h3>Changelog</h3>
+				<div class="row">
+					<div class="col col-2">
+						<time datetime="2016-07-21 14:19">07.21.2016</time>
+					</div>
+					<div class="col col-2">
+						<strong>1.2.0</strong>
+					</div>
+					<div class="col col-8">
+						Add <a href="demo-outline.html">Feedify for Outline</a> theme.
+					</div>
+				</div>
 				<div class="row">
 					<div class="col col-2">
 						<time datetime="2016-07-18 13:28">07.18.2016</time>
