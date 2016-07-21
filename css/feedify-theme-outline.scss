@@ -1,16 +1,75 @@
 /* Feedify v1.2.0 by Sarah Dayan | https://sarahdayan.github.io/feedify */
 $grey: #eee;
+$link: #337ab7;
 
 * {
 	outline: none !important;
 }
 
 body {
+	margin: 0;
 	background: $grey;
 	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 	font-size: 14px;
 	line-height: normal;
 	font-weight: 400;
+}
+
+a, a:focus, a:visited {
+	color: $link;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.center-block {
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.list-unstyled,
+.list-inline {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list-inline {
+	margin-left: -5px;
+	li {
+		display: inline;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: '';
+	clear: both;
+	height: 0;
 }
 
 .feedify {
@@ -72,10 +131,17 @@ body {
 			}
 			.actions {
 				margin-bottom: 20px;
+				padding-bottom: 20px;
 				font-size: 30px;
 				border-bottom: 1px solid $grey;
 			}
 		}
+	}
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+		display: none;
 	}
 }
 
